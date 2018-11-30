@@ -14,7 +14,9 @@ client.user.setGame(`Royal Force / 4play`);
 });
 
 
-
+client.on('ready',async () => {
+  client.channels.find(ch => ch.id === "518121246769283072" && ch.type === 'voice').join();
+});
 
 
 const developers = ["408005403381858304","513666662004686848"]
