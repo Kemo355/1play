@@ -14,16 +14,7 @@ client.user.setGame(`Royal Force / 4play`);
 });
 
 
-client.on('ready',async () => {
-  client.channels.find(ch => ch.id === "518121246769283072" && ch.type === 'voice').join();
-});
 
-
-
-client.on('message', msg => {
-  if(msg.content === '4stop')
-  msg.reply('**تم إيقاف الأغنية|✅**')
-});
 
 
 
